@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The YARN NEST - thoughtful handmade crafts, cozy yarn creations and gifts.">
+  <title>The YARN NEST | Handmade with Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Thoughtful handmade pieces, made with care</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="The YARN NEST home">
+      <span class="brand-mark">Y</span>
+      <span>THE <b>YARN NEST</b><small>HANDMADE • HEARTMADE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#craft">Our Craft</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Shopping bag">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE JOY, MADE BY HAND</p>
+        <h1>Find your<br><em>cozy corner.</em></h1>
+        <p class="hero-text">Discover thoughtful handmade pieces, beautiful yarn creations and gifts made to bring warmth to everyday moments.</p>
+        <a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Soft yarn and handmade crochet inspiration">
+        <div class="sun"></div><div class="yarn yarn-one"></div><div class="yarn yarn-two"></div>
+        <div class="art-note">made slowly<br>made with love</div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="Store values">
+      <div><span>✳</span> Made with care</div><div><span>♡</span> Thoughtful gifting</div><div><span>⌁</span> Cozy by nature</div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Little things to <em>love.</em></h2></div>
+        <p>Explore a growing collection of handmade-inspired favorites.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All pieces</button>
+        <button class="filter" data-filter="crochet">Crochet</button>
+        <button class="filter" data-filter="home">Home & living</button>
+        <button class="filter" data-filter="gifts">Gifts</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="crochet">
+          <div class="product-art art-bag"><span>01</span><div class="illustration-bag"></div></div>
+          <div class="product-info"><div><h3>Everyday Crochet Tote</h3><p>Soft, simple, versatile</p></div><strong>Coming soon</strong></div>
+        </article>
+        <article class="product-card" data-category="home">
+          <div class="product-art art-coaster"><span>02</span><div class="illustration-coaster"></div></div>
+          <div class="product-info"><div><h3>Cozy Crochet Coasters</h3><p>A little warmth for your table</p></div><strong>Coming soon</strong></div>
+        </article>
+        <article class="product-card" data-category="gifts">
+          <div class="product-art art-gift"><span>03</span><div class="illustration-flower">✿</div></div>
+          <div class="product-info"><div><h3>Handmade Flower Gift</h3><p>A keepsake that stays lovely</p></div><strong>Coming soon</strong></div>
+        </article>
+      </div>
+      <p class="demo-note">These are sample product cards. Replace them with your real products, photos and prices before accepting orders.</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-art"><div class="thread-circle"></div><span>THE BEAUTY<br>OF SLOW MADE</span></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE FROM OUR NEST</p><h2>Made for the<br><em>moments that matter.</em></h2>
+        <p>The YARN NEST is a home for thoughtful craft, comforting textures and small details that make a space feel like yours. We believe the best things are made with patience, creativity and care.</p>
+        <a class="text-link" href="#contact">Get to know us <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="craft" id="craft"><p class="eyebrow">OUR PROMISE</p><h2>Not just made.<br><em>Made meaningful.</em></h2>
+      <div class="craft-points"><div><b>01 / Thoughtful</b><p>Pieces selected and created with intention.</p></div><div><b>02 / Personal</b><p>Small details that make gifting feel special.</p></div><div><b>03 / Creative</b><p>A celebration of color, texture and imagination.</p></div></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><div><a class="brand footer-brand" href="#"><span class="brand-mark">Y</span><span>THE <b>YARN NEST</b><small>HANDMADE • HEARTMADE</small></span></a><p>Little things, made with love.</p></div>
+      <div><p class="eyebrow">SAY HELLO</p><a href="mailto:hello@theyarnnest.example">Add your store email here</a><p class="small">Replace this placeholder with your real contact email.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> The YARN NEST</span><span>Made with care, wherever you are.</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
